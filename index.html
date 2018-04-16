@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="stylesheet" href="styles/stylesheet.css">
+
+    <title>TeresaJuan Test</title>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <h1>who are you looking for on GitHub?</h1>
+
+        <div id='form'>
+            <img id='gitLogo' class='show' src='styles/images/search.jpg' alt='logo github'>
+            <input type="text" placeholder="Search by username...">
+            <button id="search" type="button">Search</button>
+        </div>
+
+        <div id='userSucces' class='hide'>
+            <div class='allInfo'>
+                <div class='generalInfo'>
+                    <img id="avatar" alt="avatar user">
+                    <div id='infoUser'>
+                        <p id="emailUser"></p>
+                        <p id="fullName"></p>
+                        <p id="bioUser"></p>
+                    </div>
+                </div>
+                <div class='repositories'>
+                    <h2>Repositories</h2>
+                    <div class='tableInfo'>
+                        <table id='repoTable'></table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id='userError' class='hide'>
+            <p>This user does not exist</p>
+        </div>
+        
+        <script src="scripts/myfunctions.js"></script>
+    </div>
+</body>
+
+</html>

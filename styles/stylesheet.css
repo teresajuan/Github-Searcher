@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body {
+    background-image: url('images/code8.png');
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: "Indie Flower", sans-serif;
+}
+
+#container {
+    margin-left: 25rem;
+    margin-right: 25rem;
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding-bottom: 2rem;
+    background-color: white;
+
+}
+
+#form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gitLogo {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+input {
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 15rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+#search {
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 8rem;
+    margin-top: 1rem;
+}
+
+.allInfo {
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.generalInfo {
+    display: flex;
+
+}
+
+#infoUser {
+    margin-left: 3rem;
+    margin-right: 5rem;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#avatar {
+    width: 9rem;
+    height: 8rem;
+    margin-left: 5rem;
+    border-radius: 0.5rem;
+}
+
+#fullName {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.repositories {
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+.tableInfo {
+    overflow-y: auto;
+    height: 10rem;
+}
+
+#repoTable {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    width: 28rem;
+
+}
+
+td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+
+td:first-child {
+    width: 20rem;
+    text-align: left;
+}
+
+#star {
+    width: 1.3rem;
+    height: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 0.3rem;
+}
+
+#fork {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#userError {
+    background-color: rgb(241, 148, 138);
+    border-radius: 0.5rem;
+    width: 50%;
+    text-align: center;
+}
+
+@media (max-width: 450px) {
+
+    #container {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 2rem;
+    }
+
+    h1 {
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #gitLogo {
+        margin-left: 8.5rem;
+        margin-bottom: 1rem;
+    }
+
+    input {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 55%;
+    }
+
+    #search {
+        width: 25%;
+        margin-left: 1rem;
+    }
+
+    #avatar {
+        margin-left: 1rem;
+
+    }
+
+    #infoUser {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .repositories {
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        width: 90%;
+    }
+
+    #repoTable {
+        width: 100%;
+    }
+
+    #star {
+        margin-left: 0.5rem;
+    }
+
+    td:first-child {
+        width: 65%;
+    }
+
+    td:nth-child(2) {
+        width: 20%;
+    }
+
+    td:nth-child(3) {
+        width: 15%;
+    }
+
+    #userError {
+        margin-top: 2rem;
+        width: 70%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 1000px) {
+
+    #container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
+
+    h1 {
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #gitLogo {
+        margin-bottom: 1rem;
+        margin-right: 5rem;
+        margin-left: 15rem;
+
+    }
+
+    input {
+        margin-left: 1.5rem;
+        margin-right: 1rem;
+        width: 55%;
+    }
+
+    #search {
+        width: 25%;
+        margin-left: 1rem;
+    }
+
+    #avatar {
+        margin-left: 1.5rem;
+
+    }
+
+    #infoUser {
+        margin-left: 3rem;
+        margin-right: 1rem;
+    }
+
+    .repositories {
+        margin-left: 1.5rem;
+        margin-top: 0.5rem;
+        width: 90%;
+    }
+
+    #repoTable {
+        width: 100%;
+    }
+
+    #star {
+        margin-left: 0.5rem;
+    }
+
+    td:first-child {
+        width: 65%;
+    }
+
+    td:nth-child(2) {
+        width: 20%;
+    }
+
+    td:nth-child(3) {
+        width: 15%;
+    }
+
+    #userError {
+        margin-top: 2rem;
+        width: 70%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1450px) {
+
+    #container {
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-top: 5rem;
+    }
+
+    .generalInfo {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        width: 100%;
+    }
+
+    #infoUser {
+        margin-left: 4rem;
+
+    }
+
+    .repositories {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-top: 0.5rem;
+        width: 90%;
+    }
+
+    #repoTable {
+        width: 100%;
+    }
+
+    td:first-child {
+        width: 65%;
+    }
+
+    td:nth-child(2) {
+        width: 20%;
+    }
+
+    td:nth-child(3) {
+        width: 15%;
+    }
+}
+
+@media (min-width: 1451px) and (max-width: 1850px) {
+
+    #container {
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+
+
+    .repositories {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-top: 0.5rem;
+        width: 90%;
+    }
+
+    #repoTable {
+        width: 100%;
+    }
+
+    td:first-child {
+        width: 65%;
+    }
+
+    td:nth-child(2) {
+        width: 20%;
+    }
+
+    td:nth-child(3) {
+        width: 15%;
+    }
+
+}
